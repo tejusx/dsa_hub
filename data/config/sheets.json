@@ -1,0 +1,88 @@
+{
+  "sheets": [
+    {
+      "id": "striver-a2z",
+      "name": "Striver A2Z",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "neetcode-150",
+      "name": "NeetCode 150",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "blind-75",
+      "name": "Blind 75",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "love-babbar-450",
+      "name": "Love Babbar 450",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "id": "leetcode-75",
+      "name": "LeetCode 75",
+      "enabled": true,
+      "order": 5
+    },
+    {
+      "id": "leetcode-top-150",
+      "name": "LeetCode Top 150",
+      "enabled": true,
+      "order": 6
+    },
+    {
+      "id": "fraz-leetcode",
+      "name": "Fraz LeetCode",
+      "enabled": false,
+      "order": 7
+    },
+    {
+      "id": "algoprep-151",
+      "name": "AlgoPrep 151",
+      "enabled": false,
+      "order": 8
+    },
+    {
+      "id": "shradha-maam",
+      "name": "Shradha Ma'am",
+      "enabled": false,
+      "order": 9
+    },
+    {
+      "id": "siddharth-singh",
+      "name": "Siddharth Singh",
+      "enabled": false,
+      "order": 10
+    },
+    {
+      "id": "top-100-liked-questions",
+      "name": "Top 100 Liked Questions",
+      "enabled": false,
+      "order": 11
+    },
+    {
+      "id": "visualization",
+      "name": "Visualization",
+      "enabled": false,
+      "order": 12
+    },
+    {
+      "id": "all-todo",
+      "name": "All TODO",
+      "enabled": false,
+      "order": 13
+    },
+    {
+      "id": "all",
+      "name": "All",
+      "enabled": false,
+      "order": 14
+    }
+  ]
+}

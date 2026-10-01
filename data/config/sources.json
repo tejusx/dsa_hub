@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "id": "a2z",
+      "file": "a2z.json",
+      "enabled": true
+    },
+    {
+      "id": "neetcode-150",
+      "file": "neetcode-150-list.json",
+      "enabled": true
+    },
+    {
+      "id": "leetcode",
+      "file": "leetcode.json",
+      "enabled": true
+    },
+    {
+      "id": "booleanstack",
+      "file": "booleanstack_dsa_problems.json",
+      "enabled": true
+    },
+    {
+      "id": "book-sets",
+      "file": "book-sets.json",
+      "enabled": true
+    },
+    {
+      "id": "problem-site-data",
+      "file": "problemSiteData.json",
+      "enabled": true
+    }
+  ]
+}

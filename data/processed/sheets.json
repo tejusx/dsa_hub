@@ -1,0 +1,104 @@
+{
+  "version": "2.0",
+  "sheet_count": 14,
+  "sheets": [
+    {
+      "sheet_id": "striver-a2z",
+      "name": "Striver A2Z",
+      "enabled": true,
+      "order": 1,
+      "problem_count": 560
+    },
+    {
+      "sheet_id": "neetcode-150",
+      "name": "NeetCode 150",
+      "enabled": true,
+      "order": 2,
+      "problem_count": 150
+    },
+    {
+      "sheet_id": "blind-75",
+      "name": "Blind 75",
+      "enabled": true,
+      "order": 3,
+      "problem_count": 75
+    },
+    {
+      "sheet_id": "love-babbar-450",
+      "name": "Love Babbar 450",
+      "enabled": true,
+      "order": 4,
+      "problem_count": 435
+    },
+    {
+      "sheet_id": "leetcode-75",
+      "name": "LeetCode 75",
+      "enabled": true,
+      "order": 5,
+      "problem_count": 75
+    },
+    {
+      "sheet_id": "leetcode-top-150",
+      "name": "LeetCode Top 150",
+      "enabled": true,
+      "order": 6,
+      "problem_count": 150
+    },
+    {
+      "sheet_id": "fraz-leetcode",
+      "name": "Fraz LeetCode",
+      "enabled": false,
+      "order": 7,
+      "problem_count": 284
+    },
+    {
+      "sheet_id": "algoprep-151",
+      "name": "AlgoPrep 151",
+      "enabled": false,
+      "order": 8,
+      "problem_count": 147
+    },
+    {
+      "sheet_id": "shradha-maam",
+      "name": "Shradha Ma'am",
+      "enabled": false,
+      "order": 9,
+      "problem_count": 399
+    },
+    {
+      "sheet_id": "siddharth-singh",
+      "name": "Siddharth Singh",
+      "enabled": false,
+      "order": 10,
+      "problem_count": 416
+    },
+    {
+      "sheet_id": "top-100-liked-questions",
+      "name": "Top 100 Liked Questions",
+      "enabled": false,
+      "order": 11,
+      "problem_count": 101
+    },
+    {
+      "sheet_id": "visualization",
+      "name": "Visualization",
+      "enabled": false,
+      "order": 12,
+      "problem_count": 17
+    },
+    {
+      "sheet_id": "all-todo",
+      "name": "All TODO",
+      "enabled": false,
+      "order": 13,
+      "problem_count": 2622
+    },
+    {
+      "sheet_id": "all",
+      "name": "All",
+      "enabled": false,
+      "order": 14,
+      "problem_count": 544
+    }
+  ]
+}

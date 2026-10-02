@@ -2,23 +2,21 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 import * as authApi from '../api/authApi.js'
 import { ApiError, TOKEN_STORAGE_KEY } from '../api/client.js'
 
+/* eslint-disable react-refresh/only-export-components */
 const AuthContext = createContext(null)
 
 export function AuthProvider({ children }) {
   const [token, setToken] = useState(() => localStorage.getItem(TOKEN_STORAGE_KEY))
   const [user, setUser] = useState(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(() => Boolean(localStorage.getItem(TOKEN_STORAGE_KEY)))
 
   useEffect(() => {
     let cancelled = false
 
     if (!token) {
-      setUser(null)
-      setLoading(false)
       return undefined
     }
 
-    setLoading(true)
     authApi.getCurrentUser()
       .then((currentUser) => {
         if (!cancelled) setUser(currentUser)
@@ -30,6 +28,7 @@ export function AuthProvider({ children }) {
           localStorage.removeItem(TOKEN_STORAGE_KEY)
           setToken(null)
         }
+        setLoading(false)
       })
       .finally(() => {
         if (!cancelled) setLoading(false)
@@ -44,9 +43,14 @@ export function AuthProvider({ children }) {
     const response = await authApi.login(credentials)
     localStorage.setItem(TOKEN_STORAGE_KEY, response.accessToken)
     setToken(response.accessToken)
-    const currentUser = await authApi.getCurrentUser()
-    setUser(currentUser)
-    return currentUser
+    setLoading(true)
+    try {
+      const currentUser = await authApi.getCurrentUser()
+      setUser(currentUser)
+      return currentUser
+    } finally {
+      setLoading(false)
+    }
   }, [])
 
   const register = useCallback(async (details) => {
@@ -59,6 +63,7 @@ export function AuthProvider({ children }) {
     localStorage.removeItem(TOKEN_STORAGE_KEY)
     setToken(null)
     setUser(null)
+    setLoading(false)
   }, [])
 
   const value = useMemo(() => ({

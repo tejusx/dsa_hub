@@ -31,4 +31,20 @@ public interface SheetProblemRepository extends JpaRepository<SheetProblem, Shee
                      sp.problem_id ASC
             """, nativeQuery = true)
     List<Problem> findActiveProblemsBySheetIdOrderByOccurrencePosition(@Param("sheetId") String sheetId);
+
+    @Query(value = """
+            SELECT o.occurrence_id, o.position, o.section, o.subsection,
+                   p.problem_id, p.title, p.leetcode_id, p.leetcode_slug, p.difficulty,
+                   p.leetcode_paid_only, p.leetcode_has_solution, p.leetcode_has_video_solution
+            FROM sheet_problems sp
+            JOIN problems p ON p.problem_id = sp.problem_id
+            LEFT JOIN sheet_problem_occurrences o
+                   ON o.sheet_id = sp.sheet_id
+                  AND o.problem_id = sp.problem_id
+                  AND o.is_active = TRUE
+            WHERE sp.sheet_id = :sheetId
+              AND sp.is_active = TRUE
+            ORDER BY o.position ASC NULLS LAST, o.occurrence_id ASC NULLS LAST, p.problem_id ASC
+            """, nativeQuery = true)
+    List<Object[]> findActiveOccurrencesBySheetId(@Param("sheetId") String sheetId);
 }

@@ -1,0 +1,2837 @@
+{
+  "strategy": [
+    "normalized title + topic/section context",
+    "normalized title + slug",
+    "unique normalized title"
+  ],
+  "base_practice_count": 402,
+  "learning_records_excluded": 38,
+  "nonpractice_records_excluded": 5,
+  "data_problem_count": 402,
+  "matches": [
+    {
+      "title": "Pattern 1",
+      "order": 1,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 2",
+      "order": 2,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 3",
+      "order": 3,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 4",
+      "order": 4,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 5",
+      "order": 5,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 6",
+      "order": 6,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 7",
+      "order": 7,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 8",
+      "order": 8,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 9",
+      "order": 9,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 10",
+      "order": 10,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 11",
+      "order": 11,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 12",
+      "order": 12,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 13",
+      "order": 13,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 14",
+      "order": 14,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 15",
+      "order": 15,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 16",
+      "order": 16,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 17",
+      "order": 17,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 18",
+      "order": 18,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 19",
+      "order": 19,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 20",
+      "order": 20,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 21",
+      "order": 21,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Pattern 22",
+      "order": 22,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Patterns"
+    },
+    {
+      "title": "Count all Digits of a Number",
+      "order": 23,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Count number of odd digits in a number",
+      "order": 24,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Reverse a number",
+      "order": 25,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Palindrome Number",
+      "order": 26,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Return the Largest Digit in a Number",
+      "order": 27,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Factorial of a given number",
+      "order": 28,
+      "method": "normalized_title_and_context",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Check if the Number is Armstrong",
+      "order": 29,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Check for Perfect Number",
+      "order": 30,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Check for Prime Number",
+      "order": 31,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Count of Prime Numbers till N",
+      "order": 32,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "GCD of Two Numbers",
+      "order": 33,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "LCM of two numbers",
+      "order": 34,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Divisors of a Number",
+      "order": 35,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Maths"
+    },
+    {
+      "title": "Sum of Array Elements",
+      "order": 36,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Arrays"
+    },
+    {
+      "title": "Count of odd numbers in Array",
+      "order": 37,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Arrays"
+    },
+    {
+      "title": "Check if the Array is Sorted I",
+      "order": 38,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Arrays"
+    },
+    {
+      "title": "Reverse an array",
+      "order": 39,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Arrays"
+    },
+    {
+      "title": "Highest Occurring Element in an Array",
+      "order": 40,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Hashing"
+    },
+    {
+      "title": "Second Highest Occurring Element",
+      "order": 41,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Hashing"
+    },
+    {
+      "title": "Sum of Highest and Lowest Frequency",
+      "order": 42,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Hashing"
+    },
+    {
+      "title": "Reverse a String II",
+      "order": 43,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Strings"
+    },
+    {
+      "title": "Palindrome Check",
+      "order": 44,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Strings"
+    },
+    {
+      "title": "Largest Odd Number in a String",
+      "order": 45,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Strings"
+    },
+    {
+      "title": "Longest Common Prefix",
+      "order": 46,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Strings"
+    },
+    {
+      "title": "Isomorphic Strings",
+      "order": 47,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Strings"
+    },
+    {
+      "title": "Rotate String",
+      "order": 48,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Strings"
+    },
+    {
+      "title": "Valid Anagram",
+      "order": 49,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Strings"
+    },
+    {
+      "title": "Sort Characters by Frequency",
+      "order": 50,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Strings"
+    },
+    {
+      "title": "Sum of First N Numbers",
+      "order": 51,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Factorial of a Given Number",
+      "order": 52,
+      "method": "normalized_title_and_context",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Sum of Array Elements II",
+      "order": 53,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Reverse a String I",
+      "order": 54,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Check if String is Palindrome or Not",
+      "order": 55,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Check if a Number is Prime or Not",
+      "order": 56,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Reverse an array 2",
+      "order": 57,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Check if the Array is Sorted II",
+      "order": 58,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Sum of Digits in a Given Number",
+      "order": 59,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Fibonacci Number",
+      "order": 60,
+      "method": "normalized_title",
+      "section": "Beginner Problems",
+      "topic": "Basic Recursion"
+    },
+    {
+      "title": "Selection Sort",
+      "order": 61,
+      "method": "normalized_title",
+      "section": "Sorting ",
+      "topic": "Algorithms"
+    },
+    {
+      "title": "Bubble Sort",
+      "order": 62,
+      "method": "normalized_title",
+      "section": "Sorting ",
+      "topic": "Algorithms"
+    },
+    {
+      "title": "Insertion Sorting",
+      "order": 63,
+      "method": "normalized_title",
+      "section": "Sorting ",
+      "topic": "Algorithms"
+    },
+    {
+      "title": "Merge Sorting",
+      "order": 64,
+      "method": "normalized_title",
+      "section": "Sorting ",
+      "topic": "Algorithms"
+    },
+    {
+      "title": "Quick Sorting",
+      "order": 65,
+      "method": "normalized_title",
+      "section": "Sorting ",
+      "topic": "Algorithms"
+    },
+    {
+      "title": "Linear Search",
+      "order": 66,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Largest Element",
+      "order": 67,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Second Largest Element",
+      "order": 68,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Maximum Consecutive Ones",
+      "order": 69,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Left Rotate Array by One",
+      "order": 70,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Left Rotate Array by K Places",
+      "order": 71,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Move Zeros to End",
+      "order": 72,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Remove duplicates from sorted array",
+      "order": 73,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Find missing number",
+      "order": 74,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Union of two sorted arrays",
+      "order": 75,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Intersection of two sorted arrays",
+      "order": 76,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Majority Element-I",
+      "order": 77,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Leaders in an Array",
+      "order": 78,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Rearrange array elements by sign",
+      "order": 79,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Print the matrix in spiral manner",
+      "order": 80,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Pascal's Triangle I",
+      "order": 81,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Pascal's Triangle II",
+      "order": 82,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Pascal's Triangle III",
+      "order": 83,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Rotate matrix by 90 degrees",
+      "order": 84,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Set Matrix Zeroes",
+      "order": 85,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Two Sum",
+      "order": 86,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "3 Sum",
+      "order": 87,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "4 Sum",
+      "order": 88,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Sort an array of 0's 1's and 2's",
+      "order": 89,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Kadane's Algorithm",
+      "order": 90,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Next Permutation",
+      "order": 91,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Medium)"
+    },
+    {
+      "title": "Majority Element-II",
+      "order": 92,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Hard)"
+    },
+    {
+      "title": "Find the repeating and missing number",
+      "order": 93,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Hard)"
+    },
+    {
+      "title": "Count Inversions",
+      "order": 94,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Hard)"
+    },
+    {
+      "title": "Reverse Pairs",
+      "order": 95,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Hard)"
+    },
+    {
+      "title": "Maximum Product Subarray in an Array",
+      "order": 96,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Hard)"
+    },
+    {
+      "title": "Merge two sorted arrays without extra space",
+      "order": 97,
+      "method": "normalized_title",
+      "section": "Arrays",
+      "topic": "FAQs(Hard)"
+    },
+    {
+      "title": "Longest Consecutive Sequence in an Array",
+      "order": 98,
+      "method": "normalized_title",
+      "section": "Hashing",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Longest subarray with sum K",
+      "order": 99,
+      "method": "normalized_title",
+      "section": "Hashing",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Largest Subarray with Sum 0",
+      "order": 100,
+      "method": "normalized_title",
+      "section": "Hashing",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Count subarrays with given sum",
+      "order": 101,
+      "method": "normalized_title",
+      "section": "Hashing",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Count subarrays with given xor K",
+      "order": 102,
+      "method": "normalized_title",
+      "section": "Hashing",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Search X in sorted array",
+      "order": 103,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Lower Bound",
+      "order": 104,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Upper Bound",
+      "order": 105,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Fundamentals"
+    },
+    {
+      "title": "Search insert position",
+      "order": 106,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Floor and Ceil in Sorted Array",
+      "order": 107,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "First and last occurrence",
+      "order": 108,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Search in rotated sorted array-I",
+      "order": 109,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Search in rotated sorted array-II",
+      "order": 110,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Find minimum in Rotated Sorted Array",
+      "order": 111,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Find out how many times the array is rotated",
+      "order": 112,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Single element in sorted array",
+      "order": 113,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Find square root of a number",
+      "order": 114,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "On answers"
+    },
+    {
+      "title": "Find Nth root of a number",
+      "order": 115,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "On answers"
+    },
+    {
+      "title": "Find the smallest divisor",
+      "order": 116,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "On answers"
+    },
+    {
+      "title": "Koko eating bananas",
+      "order": 117,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "On answers"
+    },
+    {
+      "title": "Minimum days to make M bouquets",
+      "order": 118,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "On answers"
+    },
+    {
+      "title": "Capacity to Ship Packages Within D Days",
+      "order": 119,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "On answers"
+    },
+    {
+      "title": "Kth Missing Positive Number",
+      "order": 120,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "On answers"
+    },
+    {
+      "title": "Painter's Partition",
+      "order": 121,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "On answers"
+    },
+    {
+      "title": "Aggressive Cows",
+      "order": 122,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Book Allocation Problem",
+      "order": 123,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Find peak element",
+      "order": 124,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Median of 2 sorted arrays",
+      "order": 125,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Kth element of 2 sorted arrays",
+      "order": 126,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Minimize Max Distance to Gas Station",
+      "order": 127,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Split array - largest sum",
+      "order": 128,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Find row with maximum 1's",
+      "order": 129,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "2D Arrays"
+    },
+    {
+      "title": "Search in a 2D Matrix",
+      "order": 130,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "2D Arrays"
+    },
+    {
+      "title": "Search in 2D matrix - II",
+      "order": 131,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "2D Arrays"
+    },
+    {
+      "title": "Find Peak Element - II",
+      "order": 132,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "2D Arrays"
+    },
+    {
+      "title": "Matrix Median",
+      "order": 133,
+      "method": "normalized_title",
+      "section": "Binary Search",
+      "topic": "2D Arrays"
+    },
+    {
+      "title": "Pow(x,n)",
+      "order": 134,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "Implementation Problems"
+    },
+    {
+      "title": "Generate Parentheses",
+      "order": 135,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "Implementation Problems"
+    },
+    {
+      "title": "Power Set",
+      "order": 136,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "Implementation Problems"
+    },
+    {
+      "title": "Check if there exists a subsequence with sum K",
+      "order": 137,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "Subsequence Pattern Problems"
+    },
+    {
+      "title": "Count all subsequences with sum K",
+      "order": 138,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "Subsequence Pattern Problems"
+    },
+    {
+      "title": "Combination Sum",
+      "order": 139,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Combination Sum II",
+      "order": 140,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Subsets I",
+      "order": 141,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Subsets II",
+      "order": 142,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Combination Sum III",
+      "order": 143,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Letter Combinations of a Phone Number",
+      "order": 144,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "Hard"
+    },
+    {
+      "title": "Palindrome partitioning",
+      "order": 145,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Word Search",
+      "order": 146,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "N Queen",
+      "order": 147,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Rat in a Maze",
+      "order": 148,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "M Coloring Problem",
+      "order": 149,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Sudoku Solver",
+      "order": 150,
+      "method": "normalized_title",
+      "section": "Recursion",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Traversal in Linked List",
+      "order": 151,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Deletion of the head of LL",
+      "order": 152,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Deletion of the tail of Linked List",
+      "order": 153,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Deletion of the Kth element of Linked List",
+      "order": 154,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Delete the element with value X",
+      "order": 155,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Insertion at the head of Linked List",
+      "order": 156,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Insertion at the tail of Linked List",
+      "order": 157,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Insertion at the Kth position of Linked List",
+      "order": 158,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Insertion before the value X in Linked List",
+      "order": 159,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Single LL)"
+    },
+    {
+      "title": "Convert Array to Doubly Linked List",
+      "order": 160,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Doubly LL)"
+    },
+    {
+      "title": "Delete Tail of Doubly Linked List",
+      "order": 161,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Doubly LL)"
+    },
+    {
+      "title": "Delete Kth Element of Doubly Linked List",
+      "order": 162,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Doubly LL)"
+    },
+    {
+      "title": "Removing given node in Doubly Linked List",
+      "order": 163,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Doubly LL)"
+    },
+    {
+      "title": "Insert node before head in Doubly Linked List",
+      "order": 164,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Doubly LL)"
+    },
+    {
+      "title": "Insert node before tail in Doubly Linked List",
+      "order": 165,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Doubly LL)"
+    },
+    {
+      "title": "Insert node before (kth node) in Doubly Linked List",
+      "order": 166,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Doubly LL)"
+    },
+    {
+      "title": "Insert before given node in Doubly Linked List",
+      "order": 167,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Fundamentals (Doubly LL)"
+    },
+    {
+      "title": "Add two numbers in Linked List",
+      "order": 168,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Segregate odd and even nodes in Linked List",
+      "order": 169,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Sort a Linked List of 0's 1's and 2's",
+      "order": 170,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Remove Nth node from the back of the LL",
+      "order": 171,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Reverse a LL",
+      "order": 172,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "Logic Building"
+    },
+    {
+      "title": "Add one to a number represented by LL",
+      "order": 173,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Find Middle of Linked List",
+      "order": 174,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Delete the middle node in LL",
+      "order": 175,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Check if LL is palindrome or not",
+      "order": 176,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Find the intersection point of Y LL",
+      "order": 177,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Detect a loop in LL",
+      "order": 178,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Find the starting point in LL",
+      "order": 179,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Length of loop in LL",
+      "order": 180,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Medium)"
+    },
+    {
+      "title": "Reverse LL in group of given size K",
+      "order": 181,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Rotate a LL",
+      "order": 182,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Merge two Sorted Lists",
+      "order": 183,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Flattening of LL",
+      "order": 184,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Sort LL",
+      "order": 185,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Clone a LL with random and next pointer",
+      "order": 186,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQs (Hard)"
+    },
+    {
+      "title": "Delete all occurrences of a key in DLL",
+      "order": 187,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQS (DLL)"
+    },
+    {
+      "title": "Remove duplicates from sorted DLL",
+      "order": 188,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQS (DLL)"
+    },
+    {
+      "title": "Find Pairs with Given Sum in Doubly Linked List",
+      "order": 189,
+      "method": "normalized_title",
+      "section": "Linked-List",
+      "topic": "FAQS (DLL)"
+    },
+    {
+      "title": "Minimum Bit Flips to Convert Number",
+      "order": 190,
+      "method": "normalized_title",
+      "section": "Bit Manipulation",
+      "topic": "Problems"
+    },
+    {
+      "title": "Single Number - I",
+      "order": 191,
+      "method": "normalized_title",
+      "section": "Bit Manipulation",
+      "topic": "Problems"
+    },
+    {
+      "title": "Single Number - II",
+      "order": 192,
+      "method": "normalized_title",
+      "section": "Bit Manipulation",
+      "topic": "Problems"
+    },
+    {
+      "title": "Single Number - III",
+      "order": 193,
+      "method": "normalized_title",
+      "section": "Bit Manipulation",
+      "topic": "Problems"
+    },
+    {
+      "title": "Divide two numbers without multiplication and division",
+      "order": 194,
+      "method": "normalized_title",
+      "section": "Bit Manipulation",
+      "topic": "Problems"
+    },
+    {
+      "title": "Power Set Bit Manipulation",
+      "order": 195,
+      "method": "normalized_title",
+      "section": "Bit Manipulation",
+      "topic": "Problems"
+    },
+    {
+      "title": "XOR of numbers in a given range",
+      "order": 196,
+      "method": "normalized_title",
+      "section": "Bit Manipulation",
+      "topic": "Problems"
+    },
+    {
+      "title": "Assign Cookies",
+      "order": 197,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Easy"
+    },
+    {
+      "title": "Lemonade Change",
+      "order": 198,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Easy"
+    },
+    {
+      "title": "Fractional Knapsack",
+      "order": 199,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Easy"
+    },
+    {
+      "title": "Jump Game - I",
+      "order": 200,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Easy"
+    },
+    {
+      "title": "Shortest Job First",
+      "order": 201,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Scheduling and Interval Problems"
+    },
+    {
+      "title": "Job sequencing Problem",
+      "order": 202,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Scheduling and Interval Problems"
+    },
+    {
+      "title": "N meetings in one room",
+      "order": 203,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Scheduling and Interval Problems"
+    },
+    {
+      "title": "Non-overlapping Intervals",
+      "order": 204,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Scheduling and Interval Problems"
+    },
+    {
+      "title": "Insert Interval",
+      "order": 205,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Scheduling and Interval Problems"
+    },
+    {
+      "title": "Merge Intervals",
+      "order": 206,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Scheduling and Interval Problems"
+    },
+    {
+      "title": "Minimum number of platforms required for a railway",
+      "order": 207,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Scheduling and Interval Problems"
+    },
+    {
+      "title": "Valid Paranthesis Checker",
+      "order": 208,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Hard"
+    },
+    {
+      "title": "Candy",
+      "order": 209,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Hard"
+    },
+    {
+      "title": "Jump Game II",
+      "order": 210,
+      "method": "normalized_title",
+      "section": "Greedy Algorithms",
+      "topic": "Hard"
+    },
+    {
+      "title": "Maximum Points You Can Obtain from Cards",
+      "order": 211,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Constant Window"
+    },
+    {
+      "title": "Longest Substring Without Repeating Characters",
+      "order": 212,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Longest and Smallest Window Problems"
+    },
+    {
+      "title": "Max Consecutive Ones III",
+      "order": 213,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Longest and Smallest Window Problems"
+    },
+    {
+      "title": "Fruit Into Baskets",
+      "order": 214,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Longest and Smallest Window Problems"
+    },
+    {
+      "title": "Longest Substring With At Most K Distinct Characters",
+      "order": 215,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Longest and Smallest Window Problems"
+    },
+    {
+      "title": "Longest Repeating Character Replacement",
+      "order": 216,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Longest and Smallest Window Problems"
+    },
+    {
+      "title": "Minimum Window Substring",
+      "order": 217,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Longest and Smallest Window Problems"
+    },
+    {
+      "title": "Number of Substrings Containing All Three Characters",
+      "order": 218,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Counting Subarrays / Substrings Problems"
+    },
+    {
+      "title": "Binary Subarrays With Sum",
+      "order": 219,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Counting Subarrays / Substrings Problems"
+    },
+    {
+      "title": "Count number of Nice subarrays",
+      "order": 220,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Counting Subarrays / Substrings Problems"
+    },
+    {
+      "title": "Subarrays with K Different Integers",
+      "order": 221,
+      "method": "normalized_title",
+      "section": "Sliding Window / 2 Pointer",
+      "topic": "Counting Subarrays / Substrings Problems"
+    },
+    {
+      "title": "Implement Stack using Arrays",
+      "order": 222,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Implementation "
+    },
+    {
+      "title": "Implement Queue using Arrays",
+      "order": 223,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Implementation "
+    },
+    {
+      "title": "Implement Stack using Queue",
+      "order": 224,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Implementation "
+    },
+    {
+      "title": "Implement Queue using Stack",
+      "order": 225,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Implementation "
+    },
+    {
+      "title": "Implement stack using Linkedlist",
+      "order": 226,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Implementation "
+    },
+    {
+      "title": "Implement queue using Linkedlist",
+      "order": 227,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Implementation "
+    },
+    {
+      "title": "Balanced Paranthesis",
+      "order": 228,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Implementation "
+    },
+    {
+      "title": "Next Greater Element",
+      "order": 229,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Monotonic Stack"
+    },
+    {
+      "title": "Next Greater Element - 2",
+      "order": 230,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Monotonic Stack"
+    },
+    {
+      "title": "Asteroid Collision",
+      "order": 231,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Monotonic Stack"
+    },
+    {
+      "title": "Sum of Subarray Minimums",
+      "order": 232,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Monotonic Stack"
+    },
+    {
+      "title": "Sum of Subarray Ranges",
+      "order": 233,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Monotonic Stack"
+    },
+    {
+      "title": "Remove K Digits",
+      "order": 234,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "Monotonic Stack"
+    },
+    {
+      "title": "Implement Min Stack",
+      "order": 235,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Sliding Window Maximum",
+      "order": 236,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Trapping Rainwater",
+      "order": 237,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Largest rectangle in a histogram",
+      "order": 238,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Maximum Rectangles",
+      "order": 239,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Stock span problem",
+      "order": 240,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Celebrity Problem",
+      "order": 241,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "LRU Cache",
+      "order": 242,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "LFU Cache",
+      "order": 243,
+      "method": "normalized_title",
+      "section": "Stack / Queues",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Inorder Traversal",
+      "order": 244,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Theory/Traversals"
+    },
+    {
+      "title": "Preorder Traversal",
+      "order": 245,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Theory/Traversals"
+    },
+    {
+      "title": "Postorder Traversal",
+      "order": 246,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Theory/Traversals"
+    },
+    {
+      "title": "Level Order Traversal",
+      "order": 247,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Theory/Traversals"
+    },
+    {
+      "title": "Pre, Post, Inorder in one traversal",
+      "order": 248,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Theory/Traversals"
+    },
+    {
+      "title": "Maximum Depth in BT",
+      "order": 249,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Check if two trees are identical or not",
+      "order": 250,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Check for balanced binary tree",
+      "order": 251,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Diameter of Binary Tree",
+      "order": 252,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Maximum path sum",
+      "order": 253,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Check for symmetrical BTs",
+      "order": 254,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Children Sum Property in Binary Tree",
+      "order": 255,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Zig Zag or Spiral Traversal",
+      "order": 256,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Boundary Traversal",
+      "order": 257,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Vertical Order Traversal",
+      "order": 258,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Top View of BT",
+      "order": 259,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Bottom view of BT",
+      "order": 260,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Right/Left View of BT",
+      "order": 261,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Print root to leaf path in BT",
+      "order": 262,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "LCA in BT",
+      "order": 263,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Maximum Width of BT",
+      "order": 264,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Print all nodes at a distance of K in BT",
+      "order": 265,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Minimum time taken to burn the BT from a given Node",
+      "order": 266,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Count total nodes in a complete BT",
+      "order": 267,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Flatten Binary Tree to Linked List",
+      "order": 268,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Requirements needed to construct a unique BT",
+      "order": 269,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Construction Problems"
+    },
+    {
+      "title": "Construct a BT from Preorder and Inorder",
+      "order": 270,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Construction Problems"
+    },
+    {
+      "title": "Construct a BT from Postorder and Inorder",
+      "order": 271,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Construction Problems"
+    },
+    {
+      "title": "Serialize and De-serialize BT",
+      "order": 272,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Construction Problems"
+    },
+    {
+      "title": "Morris Inorder Traversal",
+      "order": 273,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Traversal in Constant Space"
+    },
+    {
+      "title": "Morris Preorder Traversal",
+      "order": 274,
+      "method": "normalized_title",
+      "section": "Binary Trees",
+      "topic": "Traversal in Constant Space"
+    },
+    {
+      "title": "Search in BST",
+      "order": 275,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Theory and Basics"
+    },
+    {
+      "title": "Floor and Ceil in a BST",
+      "order": 276,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Theory and Basics"
+    },
+    {
+      "title": "Insert a given node in BST",
+      "order": 277,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Medium"
+    },
+    {
+      "title": "Delete a node in BST",
+      "order": 278,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Medium"
+    },
+    {
+      "title": "Kth Smallest and Largest element in BST",
+      "order": 279,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Medium"
+    },
+    {
+      "title": "Check if a tree is a BST or not",
+      "order": 280,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Medium"
+    },
+    {
+      "title": "LCA in BST",
+      "order": 281,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Medium"
+    },
+    {
+      "title": "Construct a BST from a preorder traversal",
+      "order": 282,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Medium"
+    },
+    {
+      "title": "Inorder successor and predecessor in BST",
+      "order": 283,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "Medium"
+    },
+    {
+      "title": "BST iterator",
+      "order": 284,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Two sum in BST",
+      "order": 285,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Correct BST with two nodes swapped",
+      "order": 286,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Largest BST in Binary Tree",
+      "order": 287,
+      "method": "normalized_title",
+      "section": "Binary Search Trees",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Heapify Algorithm",
+      "order": 288,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "Theory and Implementation"
+    },
+    {
+      "title": "Build heap from a given Array",
+      "order": 289,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "Theory and Implementation"
+    },
+    {
+      "title": "Implement Min Heap",
+      "order": 290,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "Theory and Implementation"
+    },
+    {
+      "title": "Implement Max Heap",
+      "order": 291,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "Theory and Implementation"
+    },
+    {
+      "title": "Check if an array represents a min heap",
+      "order": 292,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "Theory and Implementation"
+    },
+    {
+      "title": "Convert Min Heap to Max Heap",
+      "order": 293,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "Theory and Implementation"
+    },
+    {
+      "title": "Heap Sort",
+      "order": 294,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "Theory and Implementation"
+    },
+    {
+      "title": "K-th Largest element in an array",
+      "order": 295,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "Theory and Implementation"
+    },
+    {
+      "title": "Kth largest element in a stream of running integers",
+      "order": 296,
+      "method": "normalized_title",
+      "section": "Heaps",
+      "topic": "FAQs"
+    },
+    {
+      "title": "Traversal Techniques",
+      "order": 297,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Theory and traversals"
+    },
+    {
+      "title": "Connected Components",
+      "order": 298,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Theory and traversals"
+    },
+    {
+      "title": "Number of provinces",
+      "order": 299,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Traversal Problems"
+    },
+    {
+      "title": "Number of islands",
+      "order": 300,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Traversal Problems"
+    },
+    {
+      "title": "Flood fill algorithm",
+      "order": 301,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Traversal Problems"
+    },
+    {
+      "title": "Number of enclaves",
+      "order": 302,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Traversal Problems"
+    },
+    {
+      "title": "Rotten Oranges",
+      "order": 303,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Traversal Problems"
+    },
+    {
+      "title": "Distance of nearest cell having one",
+      "order": 304,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Traversal Problems"
+    },
+    {
+      "title": "Surrounded Regions",
+      "order": 305,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Traversal Problems"
+    },
+    {
+      "title": "Number of distinct islands",
+      "order": 306,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Traversal Problems"
+    },
+    {
+      "title": "Detect a cycle in an undirected graph",
+      "order": 307,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Cycles "
+    },
+    {
+      "title": "Bipartite graph",
+      "order": 308,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Cycles "
+    },
+    {
+      "title": "Topological sort or Kahn's algorithm",
+      "order": 309,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Cycles "
+    },
+    {
+      "title": "Detect a cycle in a directed graph",
+      "order": 310,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Cycles "
+    },
+    {
+      "title": "Find eventual safe states",
+      "order": 311,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems"
+    },
+    {
+      "title": "Course Schedule I",
+      "order": 312,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems"
+    },
+    {
+      "title": "Course Schedule II",
+      "order": 313,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems"
+    },
+    {
+      "title": "Alien Dictionary",
+      "order": 314,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems"
+    },
+    {
+      "title": "Shortest path in DAG",
+      "order": 315,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems"
+    },
+    {
+      "title": "Shortest path in undirected graph with unit weights",
+      "order": 316,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems"
+    },
+    {
+      "title": "Word ladder I",
+      "order": 317,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems"
+    },
+    {
+      "title": "Word ladder II",
+      "order": 318,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems"
+    },
+    {
+      "title": "Dijkstra's algorithm",
+      "order": 319,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Print Shortest Path",
+      "order": 320,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Shortest Distance in a Binary Maze",
+      "order": 321,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Path with minimum effort",
+      "order": 322,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Cheapest flight within K stops",
+      "order": 323,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Minimum multiplications to reach end",
+      "order": 324,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Number of ways to arrive at destination",
+      "order": 325,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Bellman ford algorithm",
+      "order": 326,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Floyd warshall algorithm",
+      "order": 327,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Find the city with the smallest number of neighbors",
+      "order": 328,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Shortest Path Algorithms"
+    },
+    {
+      "title": "Disjoint Set",
+      "order": 329,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Minimum Spanning Tree"
+    },
+    {
+      "title": "Find the MST weight",
+      "order": 330,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Minimum Spanning Tree"
+    },
+    {
+      "title": "Number of operations to make network connected",
+      "order": 331,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems II"
+    },
+    {
+      "title": "Accounts merge",
+      "order": 332,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems II"
+    },
+    {
+      "title": "Number of islands II",
+      "order": 333,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems II"
+    },
+    {
+      "title": "Making a large island",
+      "order": 334,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems II"
+    },
+    {
+      "title": "Most stones removed with same row or column",
+      "order": 335,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Hard Problems II"
+    },
+    {
+      "title": "Kosaraju's algorithm",
+      "order": 336,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Additional Algorithms"
+    },
+    {
+      "title": "Bridges in graph",
+      "order": 337,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Additional Algorithms"
+    },
+    {
+      "title": "Articulation point in graph",
+      "order": 338,
+      "method": "normalized_title",
+      "section": "Graphs",
+      "topic": "Additional Algorithms"
+    },
+    {
+      "title": "Climbing stairs",
+      "order": 339,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "1D DP"
+    },
+    {
+      "title": "Frog Jump",
+      "order": 340,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "1D DP"
+    },
+    {
+      "title": "Frog jump with K distances",
+      "order": 341,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "1D DP"
+    },
+    {
+      "title": "Maximum sum of non adjacent elements",
+      "order": 342,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "1D DP"
+    },
+    {
+      "title": "House robber",
+      "order": 343,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "1D DP"
+    },
+    {
+      "title": "Ninja's training",
+      "order": 344,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "2D DP"
+    },
+    {
+      "title": "Grid unique paths",
+      "order": 345,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on grids"
+    },
+    {
+      "title": "Unique paths II",
+      "order": 346,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on grids"
+    },
+    {
+      "title": "Minimum Falling Path Sum",
+      "order": 347,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on grids"
+    },
+    {
+      "title": "Triangle",
+      "order": 348,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on grids"
+    },
+    {
+      "title": "Cherry pickup II",
+      "order": 349,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on grids"
+    },
+    {
+      "title": "Best time to buy and sell stock",
+      "order": 350,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on stocks"
+    },
+    {
+      "title": "Best time to buy and sell stock II",
+      "order": 351,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on stocks"
+    },
+    {
+      "title": "Best time to buy and sell stock III",
+      "order": 352,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on stocks"
+    },
+    {
+      "title": "Best time to buy and sell stock IV",
+      "order": 353,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on stocks"
+    },
+    {
+      "title": "Best time to buy and sell stock with transaction fees",
+      "order": 354,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on stocks"
+    },
+    {
+      "title": "Subset sum equals to target",
+      "order": 355,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Partition equal subset sum",
+      "order": 356,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Partition a set into two subsets with minimum absolute sum difference",
+      "order": 357,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Count subsets with sum K",
+      "order": 358,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Count partitions with given difference",
+      "order": 359,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "0 and 1 Knapsack",
+      "order": 360,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Minimum coins",
+      "order": 361,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Target sum",
+      "order": 362,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Coin change II",
+      "order": 363,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Unbounded knapsack",
+      "order": 364,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Rod cutting problem",
+      "order": 365,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on subsequences"
+    },
+    {
+      "title": "Longest Increasing Subsequence",
+      "order": 366,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "LIS"
+    },
+    {
+      "title": "Print Longest Increasing Subsequence",
+      "order": 367,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "LIS"
+    },
+    {
+      "title": "Largest Divisible Subset",
+      "order": 368,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "LIS"
+    },
+    {
+      "title": "Longest String Chain",
+      "order": 369,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "LIS"
+    },
+    {
+      "title": "Longest Bitonic Subsequence",
+      "order": 370,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "LIS"
+    },
+    {
+      "title": "Number of Longest Increasing Subsequences",
+      "order": 371,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "LIS"
+    },
+    {
+      "title": "Longest common subsequence",
+      "order": 372,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Longest common substring",
+      "order": 373,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Longest palindromic subsequence",
+      "order": 374,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Minimum insertions to make string palindrome",
+      "order": 375,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Minimum insertions or deletions to convert string A to B",
+      "order": 376,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Shortest common supersequence",
+      "order": 377,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Distinct subsequences",
+      "order": 378,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Edit distance",
+      "order": 379,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Wildcard matching",
+      "order": 380,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "DP on strings"
+    },
+    {
+      "title": "Matrix chain multiplication",
+      "order": 381,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "MCM DP"
+    },
+    {
+      "title": "Burst balloons",
+      "order": 382,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "MCM DP"
+    },
+    {
+      "title": "Palindrome partitioning II",
+      "order": 383,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "MCM DP"
+    },
+    {
+      "title": "Partition Array for Maximum Sum",
+      "order": 384,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "MCM DP"
+    },
+    {
+      "title": "Different Ways to Evaluate a Boolean Expression",
+      "order": 385,
+      "method": "normalized_title",
+      "section": "Dynamic Programming",
+      "topic": "MCM DP"
+    },
+    {
+      "title": "Trie Implementation and Operations",
+      "order": 386,
+      "method": "normalized_title",
+      "section": "Tries",
+      "topic": "Theory"
+    },
+    {
+      "title": "Trie Implementation and Advanced Operations",
+      "order": 387,
+      "method": "normalized_title",
+      "section": "Tries",
+      "topic": "Theory"
+    },
+    {
+      "title": "Longest Word with All Prefixes",
+      "order": 388,
+      "method": "normalized_title",
+      "section": "Tries",
+      "topic": "Problems"
+    },
+    {
+      "title": "Number of distinct substrings in a string",
+      "order": 389,
+      "method": "normalized_title",
+      "section": "Tries",
+      "topic": "Problems"
+    },
+    {
+      "title": "Maximum XOR of two numbers in an array",
+      "order": 390,
+      "method": "normalized_title",
+      "section": "Tries",
+      "topic": "Problems"
+    },
+    {
+      "title": "Maximum Xor with an element from an array",
+      "order": 391,
+      "method": "normalized_title",
+      "section": "Tries",
+      "topic": "Problems"
+    },
+    {
+      "title": "Reverse every word in a string",
+      "order": 392,
+      "method": "normalized_title",
+      "section": "Strings (Advanced Algo)",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Minimum number of bracket reversals to make an expression balanced",
+      "order": 393,
+      "method": "normalized_title",
+      "section": "Strings (Advanced Algo)",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Count and say",
+      "order": 394,
+      "method": "normalized_title",
+      "section": "Strings (Advanced Algo)",
+      "topic": "Medium Problems"
+    },
+    {
+      "title": "Rabin Karp Algorithm",
+      "order": 395,
+      "method": "normalized_title",
+      "section": "Strings (Advanced Algo)",
+      "topic": "Advanced Problems (Less asked)"
+    },
+    {
+      "title": "Z function",
+      "order": 396,
+      "method": "normalized_title",
+      "section": "Strings (Advanced Algo)",
+      "topic": "Advanced Problems (Less asked)"
+    },
+    {
+      "title": "KMP Algorithm or LPS array",
+      "order": 397,
+      "method": "normalized_title",
+      "section": "Strings (Advanced Algo)",
+      "topic": "Advanced Problems (Less asked)"
+    },
+    {
+      "title": "Shortest Palindrome",
+      "order": 398,
+      "method": "normalized_title",
+      "section": "Strings (Advanced Algo)",
+      "topic": "Advanced Problems (Less asked)"
+    },
+    {
+      "title": "Longest happy prefix",
+      "order": 399,
+      "method": "normalized_title",
+      "section": "Strings (Advanced Algo)",
+      "topic": "Advanced Problems (Less asked)"
+    },
+    {
+      "title": "Print all primes till N",
+      "order": 400,
+      "method": "normalized_title",
+      "section": "Maths",
+      "topic": "Sieve of Eratosthenes"
+    },
+    {
+      "title": "Prime factorisation of a Number",
+      "order": 401,
+      "method": "normalized_title",
+      "section": "Maths",
+      "topic": "Sieve of Eratosthenes"
+    },
+    {
+      "title": "Count primes in range L to R",
+      "order": 402,
+      "method": "normalized_title",
+      "section": "Maths",
+      "topic": "Sieve of Eratosthenes"
+    }
+  ],
+  "unmatched_base": [],
+  "unmatched_data": [],
+  "ambiguous": [],
+  "matched_count": 402,
+  "unmatched_count": 0,
+  "legacy_metadata_records_attached": 127,
+  "legacy_metadata_ambiguous": 1,
+  "canonical_matches": 230,
+  "new_canonical_problems": 172,
+  "striver_occurrence_count": 402
+}

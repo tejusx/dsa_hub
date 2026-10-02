@@ -1,7 +1,8 @@
 package dsa_hub_backend.controller;
 
+import dsa_hub_backend.dto.SheetProblemOccurrenceResponse;
+import dsa_hub_backend.dto.SheetProblemResponse;
 import dsa_hub_backend.entity.Sheet;
-import dsa_hub_backend.entity.Problem;
 import dsa_hub_backend.service.SheetService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,7 +32,12 @@ public class SheetController {
     }
 
     @GetMapping("/{sheetId}/problems")
-    public List<Problem> getProblemsForSheet(@PathVariable String sheetId) {
-        return sheetService.getProblemsForSheet(sheetId);
+    public List<SheetProblemResponse> getProblemsForSheet(@PathVariable String sheetId) {
+        return sheetService.getProblemResponsesForSheet(sheetId);
+    }
+
+    @GetMapping("/{sheetId}/problem-occurrences")
+    public List<SheetProblemOccurrenceResponse> getProblemOccurrencesForSheet(@PathVariable String sheetId) {
+        return sheetService.getProblemOccurrencesForSheet(sheetId);
     }
 }

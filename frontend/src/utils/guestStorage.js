@@ -39,7 +39,7 @@ export function saveGuestProgress(progress) {
 /** Update one global problem entry or one problem entry inside a sheet. */
 export function updateGuestProblemProgress(problemId, updates, sheetId) {
   const progress = getGuestProgress()
-  const entry = { problemId, ...updates }
+  const entry = { problemId, ...updates, updatedAt: new Date().toISOString() }
 
   if (progress.syncProgressAcrossSheets) {
     progress.problemProgress[problemId] = entry

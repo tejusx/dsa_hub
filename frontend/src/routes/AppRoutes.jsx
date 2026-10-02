@@ -1,33 +1,29 @@
 import { Route, Routes } from 'react-router-dom'
-
-const pageHeadings = {
-  dashboard: 'Dashboard',
-  sheets: 'Sheets',
-  sheet: 'Sheet',
-  problem: 'Problem',
-  login: 'Login',
-  register: 'Register',
-  settings: 'Settings',
-  account: 'Account',
-}
+import AppLayout from '../layouts/AppLayout.jsx'
+import Dashboard from '../pages/Dashboard.jsx'
+import ProblemDetail from '../pages/ProblemDetail.jsx'
+import SheetDetail from '../pages/SheetDetail.jsx'
+import Sheets from '../pages/Sheets.jsx'
 
 function PlaceholderPage({ title }) {
-  return <main><h1>{title}</h1></main>
+  return <div className="page-stack"><p className="eyebrow">DSA Hub</p><h1>{title}</h1><div className="state-panel">This page will be added in a later step.</div></div>
 }
 
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<PlaceholderPage title={pageHeadings.dashboard} />} />
-      <Route path="/dashboard" element={<PlaceholderPage title={pageHeadings.dashboard} />} />
-      <Route path="/sheets" element={<PlaceholderPage title={pageHeadings.sheets} />} />
-      <Route path="/sheets/:sheetId" element={<PlaceholderPage title={pageHeadings.sheet} />} />
-      <Route path="/problems/:problemId" element={<PlaceholderPage title={pageHeadings.problem} />} />
-      <Route path="/login" element={<PlaceholderPage title={pageHeadings.login} />} />
-      <Route path="/register" element={<PlaceholderPage title={pageHeadings.register} />} />
-      <Route path="/settings" element={<PlaceholderPage title={pageHeadings.settings} />} />
-      <Route path="/account" element={<PlaceholderPage title={pageHeadings.account} />} />
-      <Route path="*" element={<PlaceholderPage title="Page not found" />} />
+      <Route element={<AppLayout />}>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/sheets" element={<Sheets />} />
+        <Route path="/sheets/:sheetId" element={<SheetDetail />} />
+        <Route path="/problems/:problemId" element={<ProblemDetail />} />
+        <Route path="/login" element={<PlaceholderPage title="Login" />} />
+        <Route path="/register" element={<PlaceholderPage title="Register" />} />
+        <Route path="/settings" element={<PlaceholderPage title="Settings" />} />
+        <Route path="/account" element={<PlaceholderPage title="Account" />} />
+        <Route path="*" element={<PlaceholderPage title="Page not found" />} />
+      </Route>
     </Routes>
   )
 }

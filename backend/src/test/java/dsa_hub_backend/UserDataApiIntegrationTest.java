@@ -33,6 +33,58 @@ class UserDataApiIntegrationTest {
     private ObjectMapper objectMapper;
 
     @Test
+    void publicContentWorksWithoutAuthenticationWhileUserDataStaysProtected() throws Exception {
+        mockMvc.perform(get("/api/sheets"))
+                .andExpect(status().isOk());
+        mockMvc.perform(get("/api/problems"))
+                .andExpect(status().isOk());
+        mockMvc.perform(get("/api/sheets/striver-a2z/problem-occurrences")
+                        .header("Authorization", "Bearer invalid-token"))
+                .andExpect(status().isOk());
+
+        mockMvc.perform(get("/api/auth/me"))
+                .andExpect(status().isUnauthorized());
+        mockMvc.perform(get("/api/settings"))
+                .andExpect(status().isUnauthorized());
+        mockMvc.perform(get("/api/progress"))
+                .andExpect(status().isUnauthorized());
+        mockMvc.perform(get("/api/problems/lc-1/attempts"))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    void sheetProblemOccurrencesIncludeSourceGroupsLinksAndRepeatedAppearances() throws Exception {
+        MvcResult result = mockMvc.perform(get("/api/sheets/striver-a2z/problem-occurrences"))
+                .andExpect(status().isOk())
+                .andReturn();
+
+        JsonNode occurrences = objectMapper.readTree(result.getResponse().getContentAsString());
+        int repeatedProblemCount = 0;
+        long previousOccurrenceId = 0;
+        boolean foundProblemLink = false;
+        for (JsonNode occurrence : occurrences) {
+            long currentOccurrenceId = occurrence.get("occurrenceId").asLong();
+            assertTrue(currentOccurrenceId >= previousOccurrenceId, "occurrences should follow source order");
+            previousOccurrenceId = currentOccurrenceId;
+            assertTrue(occurrence.has("section"));
+            assertTrue(occurrence.has("subsection"));
+            JsonNode problem = occurrence.get("problem");
+            if ("lc-8".equals(problem.get("problemId").asText())) {
+                repeatedProblemCount++;
+            }
+            if ("lc-1".equals(problem.get("problemId").asText())
+                    && occurrence.get("links").size() > 0) {
+                foundProblemLink = true;
+            }
+        }
+
+        assertEquals(2, repeatedProblemCount, "the source intentionally places lc-8 twice");
+        assertTrue(foundProblemLink, "problem links should be returned with the occurrence");
+        mockMvc.perform(get("/api/sheets/missing-sheet/problem-occurrences"))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
     void userSettingsProgressSyncAttemptsAndIsolationWorkTogether() throws Exception {
         mockMvc.perform(get("/api/settings")).andExpect(status().isUnauthorized());
         mockMvc.perform(get("/api/progress")).andExpect(status().isUnauthorized());

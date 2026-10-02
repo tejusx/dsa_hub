@@ -9,6 +9,23 @@ export class ApiError extends Error {
   }
 }
 
+function isPublicGet(path, method) {
+  if (method.toUpperCase() !== 'GET') return false
+
+  const pathname = path.split('?')[0].replace(/\/$/, '')
+  if (['/api/health', '/api/sheets', '/api/problems'].includes(pathname)) return true
+
+  const segments = pathname.split('/')
+  if (segments.length === 4 && segments[1] === 'api') {
+    return segments[2] === 'sheets' || segments[2] === 'problems'
+  }
+
+  return segments.length === 5 && segments[1] === 'api' && (
+    (segments[2] === 'sheets' && ['problems', 'problem-occurrences'].includes(segments[4])) ||
+    (segments[2] === 'problems' && ['sheets', 'links', 'topics'].includes(segments[4]))
+  )
+}
+
 /** Send a JSON request to the Vite-proxied backend API. */
 export async function apiRequest(path, { method = 'GET', body, headers = {}, ...options } = {}) {
   if (!path.startsWith('/api/')) {
@@ -21,7 +38,7 @@ export async function apiRequest(path, { method = 'GET', body, headers = {}, ...
   }
 
   const token = localStorage.getItem(TOKEN_STORAGE_KEY)
-  if (token && !requestHeaders.has('Authorization')) {
+  if (token && !isPublicGet(path, method) && !requestHeaders.has('Authorization')) {
     requestHeaders.set('Authorization', `Bearer ${token}`)
   }
 

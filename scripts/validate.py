@@ -7,6 +7,8 @@ from collections import Counter
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROCESSED_DIR = BASE_DIR / "data" / "processed"
+RAW_DIR = BASE_DIR / "data" / "raw"
+CONFIG_DIR = BASE_DIR / "data" / "config"
 
 
 def load(filename):
@@ -32,6 +34,11 @@ memberships = load(
     "sheet_problems.json"
 )["sheet_problems"]
 
+normalized_records = load("normalized_problems.json").get("records", [])
+final_dataset = load("dsa_hub_final.json")
+striver_report_path = PROCESSED_DIR / "striver_migration_report.json"
+striver_report = json.loads(striver_report_path.read_text(encoding="utf-8")) if striver_report_path.exists() else {}
+
 
 errors = []
 warnings = []
@@ -41,7 +48,8 @@ def expected_problem_id(problem):
     leetcode_id = str(problem.get("leetcode_id") or "").strip()
     if leetcode_id:
         return f"lc-{leetcode_id}"
-    identity = re.sub(r"[^a-z0-9]+", " ", (problem.get("title") or "").casefold()).strip()
+    identity_value = (problem.get("metadata") or {}).get("canonical_identity_context") or problem.get("title") or ""
+    identity = re.sub(r"[^a-z0-9]+", " ", identity_value.casefold()).strip()
     if not identity:
         identity = str((problem.get("source_ids") or [""])[0]).strip().casefold()
     slug = re.sub(r"[^a-z0-9]+", "-", identity).strip("-")[:48] or "problem"
@@ -269,6 +277,55 @@ sheet_counts = Counter(
     for m in memberships
 )
 
+# ---------------------------------------------------------
+# Striver migration checkpoints
+# ---------------------------------------------------------
+
+striver_records = [r for r in normalized_records if r.get("source") == "striver-a2z"]
+striver_memberships = [m for m in memberships if m.get("sheet_id") == "striver-a2z"]
+striver_orders = [m.get("position") for m in striver_memberships]
+striver_master_ids = {m.get("problem_id") for m in striver_memberships}
+striver_masters = [p for p in problems if p.get("problem_id") in striver_master_ids]
+
+if len(striver_records) != 402 or len(striver_memberships) != 402:
+    errors.append({"type": "striver_practice_count", "normalized": len(striver_records),
+                   "memberships": len(striver_memberships), "expected": 402})
+if sorted(striver_orders) != list(range(1, 403)):
+    errors.append({"type": "striver_order", "count": len(striver_orders), "expected_positions": "1..402"})
+if any(not m.get("section_path") for m in striver_memberships):
+    errors.append({"type": "striver_missing_section_path",
+                   "count": sum(not m.get("section_path") for m in striver_memberships)})
+
+raw_base = json.loads((RAW_DIR / "striver" / "base_items.json").read_text(encoding="utf-8"))
+expected_medium_titles = [item["title"] for item in raw_base
+                          if item.get("layout") == "practice" and item.get("section") == "Arrays"
+                          and item.get("topic") == "FAQs(Medium)"]
+medium_occurrences = [m for m in striver_memberships
+                      if m.get("section") == "Arrays" and m.get("subsection") == "FAQs(Medium)"]
+actual_medium_titles = [m.get("source_title") or next((p.get("title") for p in striver_masters if p.get("problem_id") == m.get("problem_id")), None)
+                        for m in sorted(medium_occurrences, key=lambda item: item.get("position") or 0)]
+if len(expected_medium_titles) != 15 or len(actual_medium_titles) != len(expected_medium_titles):
+    errors.append({"type": "striver_array_medium_count", "actual": len(actual_medium_titles),
+                   "source_count": len(expected_medium_titles), "expected": 15})
+if Counter(actual_medium_titles) != Counter(expected_medium_titles):
+    errors.append({"type": "striver_array_medium_titles", "actual": actual_medium_titles,
+                   "expected": expected_medium_titles})
+
+if striver_report.get("matched_count") != 402 or striver_report.get("unmatched_count") != 0 or striver_report.get("ambiguous"):
+    errors.append({"type": "striver_source_matching", "matched": striver_report.get("matched_count"),
+                   "unmatched": striver_report.get("unmatched_count"),
+                   "ambiguous": len(striver_report.get("ambiguous", []))})
+
+configured_sheet_ids = {s.get("id") for s in json.loads((CONFIG_DIR / "sheets.json").read_text(encoding="utf-8")).get("sheets", [])}
+if configured_sheet_ids - set(sheet_ids):
+    errors.append({"type": "missing_configured_sheets", "ids": sorted(configured_sheet_ids - set(sheet_ids))})
+
+platform_link_keys = {"takeuforward", "leetcode", "gfg", "youtube"}
+if any(len([key for key in (record.get("links") or {}) if key in platform_link_keys]) !=
+       len(set(key for key in (record.get("links") or {}) if key in platform_link_keys))
+       for record in striver_records):
+    errors.append({"type": "striver_duplicate_platform_links"})
+
 
 # ---------------------------------------------------------
 # Report
@@ -329,6 +386,21 @@ report = {
         "missing_leetcode_links": missing_leetcode,
 
         "missing_titles": missing_title
+    },
+
+    "striver_migration": {
+        "practice_records": len(striver_records),
+        "learning_records_excluded": striver_report.get("learning_records_excluded"),
+        "nonpractice_records_excluded": striver_report.get("nonpractice_records_excluded"),
+        "base_data_matches": striver_report.get("matched_count"),
+        "unmatched_records": striver_report.get("unmatched_count"),
+        "canonical_matches": striver_report.get("canonical_matches"),
+        "new_canonical_problems": striver_report.get("new_canonical_problems"),
+        "occurrences": len(striver_memberships),
+        "array_faqs_medium_count": len(actual_medium_titles),
+        "ordering_preserved": sorted(striver_orders) == list(range(1, 403)),
+        "section_paths_preserved": all(bool(m.get("section_path")) for m in striver_memberships),
+        "platform_links_deduplicated": not any(error.get("type") == "striver_duplicate_platform_links" for error in errors),
     },
 
     "sheet_counts": dict(

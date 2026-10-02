@@ -5,8 +5,11 @@ import dsa_hub_backend.entity.ProblemLinkId;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Collection;
 
 public interface ProblemLinkRepository extends JpaRepository<ProblemLink, ProblemLinkId> {
 
     List<ProblemLink> findByProblemIdOrderByLinkTypeAsc(String problemId);
+
+    List<ProblemLink> findByProblemIdInOrderByProblemIdAscLinkTypeAsc(Collection<String> problemIds);
 }

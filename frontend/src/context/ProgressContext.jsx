@@ -4,12 +4,25 @@ import { useAuth } from './AuthContext.jsx'
 import {
   clearGuestProgress,
   getGuestProgress,
-  saveGuestProgress,
   updateGuestProblemProgress,
   updateGuestSyncSetting,
 } from '../utils/guestStorage.js'
 
+/* eslint-disable react-refresh/only-export-components */
 const ProgressContext = createContext(null)
+
+function toMigrationEntry(entry) {
+  return {
+    problemId: entry.problemId,
+    solved: entry.solved,
+    solvedAt: entry.solvedAt ?? null,
+    notes: entry.notes ?? null,
+    isBookmarked: entry.isBookmarked,
+    revisionStatus: entry.revisionStatus ?? null,
+    userDifficulty: entry.userDifficulty ?? null,
+    lastAttemptedAt: entry.lastAttemptedAt ?? null,
+  }
+}
 
 function emptyProgress(problemId) {
   return {
@@ -33,27 +46,32 @@ function getGuestEntry(problemId, sheetId, guestProgress) {
 
 export function ProgressProvider({ children }) {
   const { user, token } = useAuth()
-  const [settings, setSettings] = useState(() => getGuestProgress())
-  const [settingsLoading, setSettingsLoading] = useState(false)
+  const [guestSettings, setGuestSettings] = useState(() => getGuestProgress())
+  const [accountSettings, setAccountSettings] = useState(null)
+  const [accountSettingsUserId, setAccountSettingsUserId] = useState(null)
+  const settingsLoading = Boolean(user && token && accountSettingsUserId !== user.userId)
+  const settings = user && token
+    ? (accountSettingsUserId === user.userId ? accountSettings : null)
+    : guestSettings
 
   useEffect(() => {
     let cancelled = false
     if (!user || !token) {
-      setSettings(getGuestProgress())
-      setSettingsLoading(false)
       return undefined
     }
 
-    setSettingsLoading(true)
     progressApi.getUserSettings()
       .then((currentSettings) => {
-        if (!cancelled) setSettings(currentSettings)
-      })
-      .finally(() => {
-        if (!cancelled) setSettingsLoading(false)
+        if (!cancelled) {
+          setAccountSettings(currentSettings)
+          setAccountSettingsUserId(user.userId)
+        }
       })
       .catch(() => {
-        if (!cancelled) setSettings(null)
+        if (!cancelled) {
+          setAccountSettings(null)
+          setAccountSettingsUserId(user.userId)
+        }
       })
 
     return () => {
@@ -111,12 +129,13 @@ export function ProgressProvider({ children }) {
   const updateSyncSetting = useCallback(async (syncProgressAcrossSheets) => {
     if (user && token) {
       const updatedSettings = await progressApi.updateUserSettings({ syncProgressAcrossSheets })
-      setSettings(updatedSettings)
+      setAccountSettings(updatedSettings)
+      setAccountSettingsUserId(user.userId)
       return updatedSettings
     }
 
     const guestProgress = updateGuestSyncSetting(syncProgressAcrossSheets)
-    setSettings(guestProgress)
+    setGuestSettings(guestProgress)
     return guestProgress
   }, [user, token])
 
@@ -125,11 +144,13 @@ export function ProgressProvider({ children }) {
     const payload = {
       syncProgressAcrossSheets: guestProgress.syncProgressAcrossSheets,
       problemProgress: guestProgress.syncProgressAcrossSheets
-        ? Object.values(guestProgress.problemProgress)
+        ? Object.values(guestProgress.problemProgress).map(toMigrationEntry)
         : [],
       sheetProblemProgress: guestProgress.syncProgressAcrossSheets
         ? []
-        : Object.values(guestProgress.sheetProblemProgress).flatMap((items) => Object.values(items)),
+        : Object.values(guestProgress.sheetProblemProgress)
+          .flatMap((items) => Object.values(items))
+          .map((entry) => ({ ...toMigrationEntry(entry), sheetId: entry.sheetId })),
     }
     const response = await progressApi.migrateGuestProgress(payload)
     clearGuestProgress()

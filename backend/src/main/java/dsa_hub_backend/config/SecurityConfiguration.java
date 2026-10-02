@@ -41,6 +41,7 @@ public class SecurityConfiguration {
                                 "/api/sheets",
                                 "/api/sheets/*",
                                 "/api/sheets/*/problems",
+                                "/api/sheets/*/problem-occurrences",
                                 "/api/health").permitAll()
                         .anyRequest().authenticated())
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);

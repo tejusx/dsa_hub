@@ -1,17 +1,31 @@
 {
   "status": "PASS",
   "statistics": {
-    "problems": 5214,
+    "problems": 5344,
     "leetcode_id_problems": 4059,
-    "deterministic_non_leetcode_id_problems": 1155,
+    "deterministic_non_leetcode_id_problems": 1285,
     "sheets": 14,
-    "memberships": 5975,
-    "problems_with_leetcode": 4079,
-    "problems_with_gfg": 426,
-    "problems_with_coding_ninjas": 423,
-    "problems_with_youtube": 689,
+    "memberships": 5817,
+    "problems_with_leetcode": 4072,
+    "problems_with_gfg": 185,
+    "problems_with_coding_ninjas": 0,
+    "problems_with_youtube": 655,
     "missing_leetcode_links": 0,
     "missing_titles": 0
+  },
+  "striver_migration": {
+    "practice_records": 402,
+    "learning_records_excluded": 38,
+    "nonpractice_records_excluded": 5,
+    "base_data_matches": 402,
+    "unmatched_records": 0,
+    "canonical_matches": 230,
+    "new_canonical_problems": 172,
+    "occurrences": 402,
+    "array_faqs_medium_count": 15,
+    "ordering_preserved": true,
+    "section_paths_preserved": true,
+    "platform_links_deduplicated": true
   },
   "sheet_counts": {
     "algoprep-151": 147,
@@ -25,7 +39,7 @@
     "neetcode-150": 150,
     "shradha-maam": 399,
     "siddharth-singh": 416,
-    "striver-a2z": 560,
+    "striver-a2z": 402,
     "top-100-liked-questions": 101,
     "visualization": 17
   },
